@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1482221204884" stop="1482221214061">
+	<name>Login to bank application</name>
+	<title>Login to bank application</title>
+	<test-cases>
+		<test-case start="1482221208779" stop="1482221210810" status="passed">
+			<name>Validate user credentials</name>
+			<title>Validate user credentials</title>
+			<description></description>
+			<labels>
+			</labels>
+			<parameters>
+			</parameters>
+			<steps>
+			</steps>
+			<attachments>
+				<attachment title="Screenshot" source="4f2bfa3e-a6f0-4725-a3d9-816e4de3b1f2-attachment.png" type="image/png" size="45617"/>
+			</attachments>
+		</test-case>
+		<test-case start="1482221210812" stop="1482221213888" status="passed">
+			<name>AddCustomer</name>
+			<title>AddCustomer</title>
+			<description></description>
+			<labels>
+			</labels>
+			<parameters>
+			</parameters>
+			<steps>
+			</steps>
+			<attachments>
+				<attachment title="Screenshot" source="31144cab-2e0b-4eb8-8255-058967c73805-attachment.png" type="image/png" size="63674"/>
+			</attachments>
+		</test-case>
+	</test-cases>
+</ns2:test-suite>
