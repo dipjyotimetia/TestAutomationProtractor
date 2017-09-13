@@ -1,7 +1,6 @@
 {
-  "name": "angular-quickstart",
+  "name": "Protractor DataDriven Framework",
   "version": "1.0.0",
-  "description": "QuickStart package.json from the documentation, supplemented with testing support",
   "scripts": {
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
     "e2e": "tsc && concurrently \"http-server -s\" \"protractor config.js\" --kill-others --success first",
@@ -14,8 +13,7 @@
     "tsc:w": "tsc -w"
   },
   "keywords": [],
-  "author": "",
-  "license": "MIT",
+  "author": "Dipjyoti Metia",
   "dependencies": {
     "@angular/common": "~2.3.0",
     "@angular/compiler": "~2.3.0",
@@ -33,9 +31,9 @@
     "zone.js": "^0.7.2"
   },
   "devDependencies": {
-    "@types/jasmine": "^2.5.41",
-    "@types/node": "^6.0.62",
-    "@types/selenium-webdriver": "^2.53.39",
+    "@types/jasmine": "^2.5.54",
+    "@types/node": "^8.0.28",
+    "@types/selenium-webdriver": "^3.0.6",
     "angular": "^1.6.1",
     "bootstrap": "^3.3.7",
     "bower": "^1.8.0",
