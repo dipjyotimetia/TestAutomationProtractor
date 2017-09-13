@@ -37,10 +37,12 @@ exports.config = {
     'browserName': 'chrome'
   },
 
+  // specs: ['TestCases/BankDashboard.js'],
+
   // TestSuites
-  // suites : {
-  //   all:'e2e/**/*.js'
-  // },
+  suites : {
+    all:'e2e/**/*.js'
+  },
 
   allScriptsTimeout: 90000,
 
@@ -57,6 +59,7 @@ exports.config = {
   onPrepare: function () {
     browser.ignoreSynchronization = true,
       browser.driver.manage().window().maximize(),
+
 //Reporters
       require('jasmine-reporters');
     var mkdirp = require('mkdirp');
@@ -104,16 +107,16 @@ exports.config = {
     });
   },
 
-
   // Close the report after all tests finish
   afterLaunch: function (exitCode) {
     return new Promise(function (resolve) {
       reporter.afterLaunch(resolve.bind(this, exitCode));
     });
   },
+  
   jasmineNodeOpts: {
-    // defaultTimeoutInterval: 60000,
-    defaultTimeoutInterval: 30000,
+    defaultTimeoutInterval: 60000,
+    // defaultTimeoutInterval: 30000,
     showTiming: true,
     isVerbose: true,
     realtimeFailure: true,

@@ -4,11 +4,11 @@
   "description": "QuickStart package.json from the documentation, supplemented with testing support",
   "scripts": {
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
-    "e2e": "tsc && concurrently \"http-server -s\" \"protractor protractor.config.js\" --kill-others --success first",
+    "e2e": "tsc && concurrently \"http-server -s\" \"protractor config.js\" --kill-others --success first",
     "lint": "tslint ./app/**/*.ts -t verbose",
     "lite": "lite-server",
     "pree2e": "webdriver-manager update",
-    "test": "tsc && concurrently \"tsc -w\" \"karma start karma.conf.js\"",
+    "test": "protractor config.js",
     "test-once": "tsc && karma start karma.conf.js --single-run",
     "tsc": "tsc",
     "tsc:w": "tsc -w"
@@ -70,7 +70,7 @@
     "lodash": "^4.17.4",
     "log4js-protractor-appender": "^1.1.2",
     "mkdirp": "^0.5.1",
-    "protractor": "^4.0.14",
+    "protractor": "^5.1.2",
     "protractor-accessibility-plugin": "^0.2.0",
     "protractor-compass": "^1.0.0",
     "protractor-cucumber": "^0.1.8",
@@ -79,12 +79,12 @@
     "protractor-jasmine2-html-reporter": "0.0.6",
     "protractor-jasmine2-screenshot-reporter": "^0.3.2",
     "rimraf": "^2.5.4",
-    "tslint": "^3.15.1",
+    "tslint": "^5.7.0",
     "typescript": "~2.0.10",
     "winston": "^2.3.1",
-    "xlsjs": "^0.7.5",
-    "xlsx": "^0.8.2",
-    "xlsx-to-json": "^0.2.4"
+    "xlsjs": "^1.0.0",
+    "xlsx": "^0.11.3",
+    "xlsx-to-json": "^0.3.0"
   },
   "repository": {}
 }
